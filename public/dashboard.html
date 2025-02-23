@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dashboard - EduConnect</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <script defer src="dashboard-script.js"></script>
+    <script defer src="authRoute.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>EduConnect</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="task-automation.html">⚙️ Task Automation</a></li>
+            <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+            <li><a href="smart-scheduling.html">⏳ Smart Scheduling</a></li>
+            <li><a href="forum.html">💬 Forum</a></li>
+            <li><a href="#" onclick="checkOfflineSupport()">📶 Offline Support</a></li>
+        </ul>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Dashboard Header -->
+        <section class="dashboard-header">
+            <h1>📊 AI Dashboard</h1>
+            <p>Get insights into school automation, attendance tracking, and notifications.</p>
+        </section>
+
+        <!-- Analytics Overview -->
+        <section class="analytics-overview">
+            <div class="analytics-card">
+                <h3>📋 Attendance</h3>
+                <p><span id="attendance-percent">95%</span> Present</p>
+            </div>
+            <div class="analytics-card">
+                <h3>📝 Assignments</h3>
+                <p><span id="assignments-completed">120</span> Graded</p>
+            </div>
+            <div class="analytics-card">
+                <h3>🔔 Notifications Sent</h3>
+                <p><span id="notifications-count">50</span> Alerts Today</p>
+            </div>
+        </section>
+
+        <!-- Graph Section -->
+        <section class="charts-container">
+            <div class="chart-box">
+                <canvas id="attendanceChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <canvas id="gradingChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Task Manager -->
+        <section class="task-manager">
+            <h2>✅ Task Manager</h2>
+            <ul id="task-list">
+                <li>✔️ Automate Attendance Marking</li>
+                <li>✔️ AI-Based Assignment Grading</li>
+                <li>✔️ Send Automatic Notifications</li>
+            </ul>
+            <input type="text" id="new-task" placeholder="Add a new task...">
+            <button onclick="addTask()">➕ Add Task</button>
+        </section>
+
+        <!-- Quick Access Shortcuts -->
+        <section class="quick-access">
+            <h2>🚀 Quick Access</h2>
+            <div class="shortcut-buttons">
+                <a href="task-automation.html" class="shortcut-btn">⚙️ Automation Tools</a>
+                <a href="#" class="shortcut-btn">📅 AI Scheduling</a>
+                <a href="#" class="shortcut-btn">📶 Offline Data</a>
+            </div>
+        </section>
+
+        <!-- Floating Voice Assistant Button -->
+        <button id="voice-assistant-btn" onclick="toggleVoiceAssistant()">🎤</button>
+
+        <!-- Voice Assistant Status Display -->
+        <div id="voice-assistant-status">Listening...</div>
+
+    </div>
+
+</body>
+</html>

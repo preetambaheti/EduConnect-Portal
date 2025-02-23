@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Grading Automation</title>
+    <link rel="stylesheet" href="grading-styles.css">
+    <script defer src="grading-script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Driven Assignment Grading</h1>
+        <p>Upload your assignment below, and let AI evaluate it instantly.</p>
+        
+        <input type="file" id="fileUpload" accept=".pdf, .docx, .txt">
+        <button onclick="gradeAssignment()">Upload & Grade</button>
+        
+        <div id="resultContainer" class="hidden">
+            <h2>Grading Result</h2>
+            <p id="grade"></p>
+            <p id="feedback"></p>
+        </div>
+    </div>
+</body>
+</html>

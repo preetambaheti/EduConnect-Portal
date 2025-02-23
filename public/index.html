@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect</title>
+    <script defer src="login-script.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="authRoute.js"></script>
+    <link rel="stylesheet" href="home-styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar (Top) -->
+    <header class="navbar">
+        <div class="logo">EduConnect</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">🏠 Home</a></li>
+                <li><a href="task-automation.html">⚙️ Task Automation</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="smart-scheduling.html">⏳ Smart Scheduling</a></li>
+                <li><a href="forum.html">💬 Forum</a></li>
+                <li><a href="#" onclick="checkOfflineSupport()">📶 Offline Support</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="cta-btn">Login</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home-hero">
+        <h1>Welcome to EduConnect</h1>
+        <p>Revolutionizing school administration with AI-powered automation.</p>
+        <a href="task-automation.html" class="cta-btn">Explore Task Automation</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="home-features">
+        <h2>Why Choose EduConnect?</h2>
+        <div class="home-feature-grid">
+            <div class="home-feature-box">
+                <h3>⚙️ AI-Powered Automation</h3>
+                <p>Reduce manual work by automating attendance, grading, and notifications.</p>
+            </div>
+            <div class="home-feature-box">
+                <h3>📊 Data-Driven Insights</h3>
+                <p>Monitor school efficiency with interactive dashboards and analytics.</p>
+            </div>
+            <div class="home-feature-box">
+                <h3>⏳ Smart Scheduling</h3>
+                <p>AI-generated lesson plans optimize student learning experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Schools Say About EduConnect</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-box">
+                <p>"EduConnect transformed our school operations. AI-based attendance is a game-changer!"</p>
+                <h4>- Principal, XYZ School</h4>
+            </div>
+            <div class="testimonial-box">
+                <p>"Grading assignments used to take hours. Now it's instant with EduConnect!"</p>
+                <h4>- Teacher, ABC Institute</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Start Your AI Journey Today!</h2>
+        <a href="task-automation.html" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Floating Voice Assistant Button -->
+    <button id="voice-assistant-btn" onclick="requestMicrophoneAccess()">🎤</button>
+
+
+    <!-- Floating Voice Assistant Button -->
+    <button id="voice-assistant-btn" onclick="toggleVoiceAssistant()">🎤</button>
+
+    <!-- Voice Assistant Status Display -->
+    <div id="voice-assistant-status">Listening...</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Forum - EduConnect</title>
+    <link rel="stylesheet" href="forum-styles.css">
+    <script defer src="forum-script.js"></script>
+    <script defer src="authRoute.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">EduConnect</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="task-automation.html">⚙️ Task Automation</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="smart-scheduling.html">⏳ Smart Scheduling</a></li>
+                <li><a href="forum.html" class="active">💬 Forum</a></li>
+                <li><a href="#" onclick="checkOfflineSupport()">📶 Offline Support</a></li>
+            </ul>
+        </nav>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Offline Notification -->
+    <div id="offline-notification" class="hidden">
+        ⚠️ You are offline. Posts will be saved and synced once you are online.
+    </div>
+
+    <!-- Hero Section -->
+    <section class="forum-hero">
+        <h1>💬 AI-Powered Discussion Forum</h1>
+        <p>Engage in discussions, ask questions, and collaborate with the community.</p>
+        <input type="text" id="search" placeholder="🔍 Search discussions..." onkeyup="searchForum()">
+    </section>
+
+    <!-- Forum Post Creation -->
+    <section class="create-post">
+        <h2>Create a New Discussion</h2>
+        <div class="post-container">
+            <input type="text" id="post-title" placeholder="Enter topic title">
+            <textarea id="post-content" placeholder="Write your discussion here..."></textarea>
+            <button onclick="addPost()">➕ Post Discussion</button>
+        </div>
+    </section>
+
+    <!-- Forum Posts -->
+    <section class="forum-posts">
+        <h2>📢 Recent Discussions</h2>
+        <div id="posts-container">
+            <!-- Forum posts will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Floating Voice Assistant Button -->
+    <button id="voice-assistant-btn" onclick="toggleVoiceAssistant()">🎤</button>
+
+    <!-- Voice Assistant Status Display -->
+    <div id="voice-assistant-status">Listening...</div>
+
+</body>
+</html>

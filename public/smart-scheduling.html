@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Scheduling - EduConnect</title>
+    <link rel="stylesheet" href="smart-scheduling-styles.css">
+    <script defer src="smart-scheduling-script.js"></script>
+    <script defer src="authRoute.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">EduConnect</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="task-automation.html">⚙️ Task Automation</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="smart-scheduling.html" class="active">⏳ Smart Scheduling</a></li>
+                <li><a href="forum.html">💬 Forum</a></li>
+                <li><a href="#" onclick="checkOfflineSupport()">📶 Offline Support</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="cta-btn">Login</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="smart-hero">
+        <h1>📅 AI-Powered Smart Scheduling</h1>
+        <p>Optimize your school timetable efficiently with AI-driven scheduling.</p>
+        <a href="#demo-section" class="cta-btn">Try AI Scheduling</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="smart-features">
+        <h2>🔹 Why AI Smart Scheduling?</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>⏰ Optimized Timetable</h3>
+                <p>AI generates the most efficient schedule based on subject difficulty and teacher availability.</p>
+            </div>
+            <div class="feature-box">
+                <h3>📚 Balanced Workload</h3>
+                <p>Distributes assignments and lectures evenly to avoid overload.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🚀 AI-Driven Decision Making</h3>
+                <p>Automatically adjusts schedules based on real-time teacher and student availability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Scheduling Demo -->
+    <section id="demo-section" class="smart-demo">
+        <h2>🛠 Try AI Smart Scheduling</h2>
+        <p>Enter details to see how AI can create the perfect schedule for you.</p>
+        <div class="demo-form">
+            <label for="subjects">Number of Subjects:</label>
+            <input type="number" id="subjects" placeholder="Enter subject count" min="1">
+
+            <label for="teachers">Number of Teachers:</label>
+            <input type="number" id="teachers" placeholder="Enter teacher count" min="1">
+
+            <label for="hours">Available Hours per Day:</label>
+            <input type="number" id="hours" placeholder="Enter hours per day" min="1">
+
+            <button onclick="generateSchedule()">📅 Generate Schedule</button>
+        </div>
+        <div id="schedule-output"></div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Start AI-Powered Smart Scheduling Now!</h2>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Floating Voice Assistant Button -->
+    <button id="voice-assistant-btn" onclick="toggleVoiceAssistant()">🎤</button>
+
+    <!-- Voice Assistant Status Display -->
+    <div id="voice-assistant-status">Listening...</div>
+
+</body>
+</html>

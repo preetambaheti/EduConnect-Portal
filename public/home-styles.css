@@ -1,0 +1,197 @@
+/* General Styles for Home Page */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Top Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #002855;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #FF6600;
+}
+
+.cta-btn {
+    background: #FF6600;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #E65C00;
+}
+
+/* Hero Section */
+.home-hero {
+    background: #002855 center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 80px; /* Space for navbar */
+    border-radius: 10px;
+}
+
+.home-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.home-hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.home-features {
+    text-align: center;
+    padding: 50px 20px;
+    background: #EAF2FF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.home-feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.home-feature-box {
+    background: #004D99;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.home-feature-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 50px;
+    background: #FF6600;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.cta-btn {
+    background: white;
+    color: #FF6600;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #FFCC66;
+    color: #002855;
+}
+
+/* Floating Voice Assistant Button */
+#voice-assistant-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FF6600;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#voice-assistant-btn:hover {
+    background: #E65C00;
+    transform: scale(1.1);
+}
+
+/* Voice Assistant Status */
+#voice-assistant-status {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: none;
+    font-size: 14px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

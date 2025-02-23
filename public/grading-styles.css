@@ -1,0 +1,99 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading */
+h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* File Upload Styling */
+input[type="file"] {
+    margin: 15px 0;
+    padding: 10px;
+    border: 2px dashed #007bff;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Result Display */
+#resultContainer {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f1f8ff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Grade & Feedback Styling */
+#grade {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#feedback {
+    font-size: 16px;
+    color: #444;
+}

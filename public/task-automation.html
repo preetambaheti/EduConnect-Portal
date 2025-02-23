@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Automation - EduConnect</title>
+    <link rel="stylesheet" href="task-automation-styles.css">
+    <script defer src="auth.js"></script>
+    <script defer src="task-automation.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar (Top) -->
+    <header class="navbar">
+        <div class="logo">EduConnect</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="task-automation.html" class="active">⚙️ Task Automation</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="smart-scheduling.html">⏳ Smart Scheduling</a></li>
+                <li><a href="forum.html">💬 Forum</a></li>
+                <li><a href="#" onclick="checkOfflineSupport()">📶 Offline Support</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="cta-btn">Login</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="automation-hero">
+        <h1>Enhance School Efficiency with Task Automation</h1>
+        <p>Use AI-driven solutions to automate attendance tracking, grading, and notifications.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="automation-features">
+        <h2>Task Automation Features</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>📋 Attendance Automation</h3>
+                <p>AI-powered attendance system using facial recognition.</p>
+                <a href="attendance-automation.html" class="feature-btn">Explore</a>
+            </div>
+            <div class="feature-box">
+                <h3>📝 Automated Grading</h3>
+                <p>Instant evaluation of assignments and exams with AI.</p>
+                <a href="grading-automation.html" class="feature-btn">Explore</a>
+            </div>
+            <div class="feature-box">
+                <h3>🔔 Instant Notifications</h3>
+                <p>Automated alerts and messages to students, parents, and teachers.</p>
+                <a href="notifications.html" class="feature-btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Feature Section -->
+    <section class="automation-features">
+        <h2>How Does Task Automation Work?</h2>
+        <p>Click on a feature to learn more.</p>
+    
+        <div class="feature-grid">
+            <a href="attendance-automation.html" class="feature-card">
+                📋 <strong>Attendance Automation</strong>
+            </a>
+    
+            <a href="grading-automation.html" class="feature-card">
+                📝 <strong>Automated Grading</strong>
+            </a>
+    
+            <a href="notifications.html" class="feature-card">
+                🔔 <strong>Instant Notifications</strong>
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Start Automating School Tasks Today!</h2>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Floating Voice Assistant Button -->
+    <button id="voice-assistant-btn" onclick="toggleVoiceAssistant()">🎤</button>
+
+    <!-- Voice Assistant Status Display -->
+    <div id="voice-assistant-status">Listening...</div>
+
+</body>
+</html>
